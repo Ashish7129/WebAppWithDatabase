@@ -2,15 +2,15 @@ const mysql = require("mysql2");
 const Client = require("ssh2").Client;
 const sshClient = new Client();
 const dbServer = {
-  host: "database-1.cuzbywwn3za7.ap-south-1.rds.amazonaws.com",
+  host: "XXXXXXX",
   port: 3306,
-  user: "admin",
-  password: "nimda1234",
-  database: "TestDatabase",
+  user: "XXXXX",
+  password: "XXXXXX",
+  database: "XXXXXXX",
 };
 const tunnelConfig = {
-  host: "13.232.111.33",
-  port: 22,
+  host: "XXXXXX",
+  port: XXX,
   username: "ec2-user",
   privateKey: require("fs").readFileSync("./NAGP.pem"),
 };
